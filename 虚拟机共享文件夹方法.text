@@ -1,0 +1,4 @@
+选项  -> 共享文件夹 -> 设置为 总是启用 -> 并 添加一个本地共享文件夹
+在mnt/目录下创建一个名为 hgfs的目录
+接着，我们在终端中输入以下命令挂载共享文件夹
+sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
